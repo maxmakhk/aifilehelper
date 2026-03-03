@@ -1,0 +1,31 @@
+.ms-apiresults-floating {
+  position: fixed;
+  right: 50px;
+  bottom: 12px;
+  top: auto;
+  width: 360px;
+  height: 320px;
+  background: rgba(2,6,23,0.9);
+  color: #e6eef8;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 13px;
+  overflow: hidden;
+  z-index: 9998;
+  transform-origin: right bottom;
+  transition: height 160ms ease, width 160ms ease, transform 160ms ease;
+}
+/* when api results panel is expanded/moved lower */
+.ms-apiresults-floating.expanded {
+  right: 50px;
+  bottom: 12px;
+}
+.ms-apiresults-header { padding: 8px 12px; display:flex; justify-content:space-between; align-items:center; cursor:grab; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.ms-apiresults-body { padding: 12px; height: calc(100% - 42px); overflow: auto; }
+.ms-apiresults-empty { color: rgba(230,238,248,0.6); }
+.ms-apiresults-html { color: inherit; }
+.ms-apiresults-node { color: inherit; }
+.ms-apiresults-clear { background: transparent; border: none; color: #f87272; cursor: pointer; }
+.ms-apiresults-toggle { background: transparent; border: none; color: #9ca3af; cursor: pointer; }
+.ms-apiresults-collapsed { width: 160px; height: 36px; }

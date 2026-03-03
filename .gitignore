@@ -1,0 +1,25 @@
+# Ignore vector DB and large search data
+dochelper_chroma_testsearchfiles/
+dochelper_chroma/
+
+# Ignore local backups
+backup_removed/
+
+# Python envs and caches
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log
+
+# Node / frontend
+node_modules/
+dist/
