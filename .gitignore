@@ -1,6 +1,7 @@
 # Ignore vector DB and large search data
 dochelper_chroma_testsearchfiles/
 dochelper_chroma/
+testsearchfiles/
 
 # Ignore local backups
 backup_removed/
